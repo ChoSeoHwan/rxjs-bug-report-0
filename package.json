@@ -1,0 +1,16 @@
+{
+  "name": "rxjs-bug-report-0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/ChoSeoHwan/rxjs-bug-report-0.git",
+  "author": "'아이작_조서환' <wtae1216@afreecatv.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.0",
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  }
+}
