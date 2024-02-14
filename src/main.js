@@ -8,9 +8,15 @@ const delay = (timeout) => new Promise((resolve) => {
 
 const start = () => {
     of(null).pipe(
-        tap(() => console.log('step_1', new Error().stack)),
+        tap(() => {
+            console.log('============================== step_1 ==============================');
+            console.log(new Error().stack);
+        }),
         mergeMap(async () => await delay(1000)),
-        tap(() => console.log('step_2', new Error().stack))
+        tap(() => {
+            console.log('============================== step_2 ==============================');
+            console.log(new Error().stack);
+        }),
     ).subscribe(() => {
         console.log('finish');
     });
